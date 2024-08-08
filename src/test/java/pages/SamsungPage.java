@@ -13,7 +13,7 @@ public class SamsungPage {
     }
 
 
-    @FindBy (linkText = "2")
+    @FindBy ( xpath = "(//*[@class=\"s-pagination-item s-pagination-button\"])[1]")
     public WebElement ikinciSayfaIcon;
 
     @FindBy (xpath = "(//*[@*='a-section aok-relative s-image-square-aspect'])[17]")

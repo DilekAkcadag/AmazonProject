@@ -35,6 +35,7 @@ public class Amazon_Home_Page_Test {
         // Arama sonuçlarından 2. sayfaya tıklanıp ve açılan sayfada 2. sayfanin şu an gösterimde olduğu onaylatılacak.
         Methods.scroll(samsungPage.ikinciSayfaIcon);
         samsungPage.ikinciSayfaIcon.click();
+
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("page=2"));
 
 
