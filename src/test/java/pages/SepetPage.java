@@ -14,7 +14,7 @@ public class SepetPage {
         @FindBy(name = "proceedToRetailCheckout")
         public WebElement sepetteMiyim;
 
-        @FindBy( xpath = "//*[@id=\"sw-gtc\"]")
+        @FindBy(xpath = "//*[@id=\"sw-gtc\"]")
         public WebElement sepeteGit;
 
         @FindBy( id = "nav-logo-sprites")

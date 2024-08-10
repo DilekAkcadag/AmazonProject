@@ -35,14 +35,11 @@ public class Amazon_Home_Page_Test {
         // Arama sonuçlarından 2. sayfaya tıklanıp ve açılan sayfada 2. sayfanin şu an gösterimde olduğu onaylatılacak.
         Methods.scroll(samsungPage.ikinciSayfaIcon);
         samsungPage.ikinciSayfaIcon.click();
-
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("page=2"));
-
 
         // Üstten 5. Satır 1. Sütun içerisindeki ürüne tıklanacak.
         Methods.scroll(samsungPage.besinciUrun);
         samsungPage.besinciUrun.click();
-
 
         // Ürün sayfasında olduğumuz doğrulanacak.
         Assert.assertTrue(samsungPage.urunSayfasindaTest.isDisplayed());
@@ -53,7 +50,6 @@ public class Amazon_Home_Page_Test {
         // Sepet sayfasında olduğumuz doğrulanır
         sepetPage.sepeteGit.click();
         Assert.assertTrue(sepetPage.sepetteMiyim.isDisplayed());
-
 
         // Logo’ya tıklanarak ana sayfaya geri dönüş sağlanır
         sepetPage.anasayfayaDonus.click();
